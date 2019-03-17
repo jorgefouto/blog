@@ -3,7 +3,17 @@ Rails.application.routes.draw do
 
 #So here we can see that the route is different, but the controller is the same, with different actions.
 
+#first project
 get 'welcome/home', to: 'welcome#home'
 get 'welcome/about', to: 'welcome#about'
+
+
+#second project
+#for this to work i also need to change the link_to the /pages/home, in the about.html.erb,
+#or it will return an error, when i press the about link.
+root 'pages#home'
+
+
+get 'about', to: 'pages#about'
 
 end
