@@ -14,7 +14,10 @@ get 'welcome/about', to: 'welcome#about'
 #or it will return an error, when i press the about link.
 root 'pages#home'
 
-
 get 'about', to: 'pages#about'
+
+#books
+resources :books
+
 
 end
